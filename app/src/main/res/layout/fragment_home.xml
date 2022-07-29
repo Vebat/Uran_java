@@ -13,14 +13,14 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="36dp"
+            android:layout_width="47dp"
             android:layout_height="58dp"
             android:layout_margin="10sp"
             app:srcCompat="@drawable/ic_kvadicon" />
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="80dp"
 
             android:paddingTop="15sp"
             android:text="@string/manual1name"
@@ -28,5 +28,35 @@
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
+
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_marginHorizontal="10sp"
+        android:layout_marginTop="100sp"
+        android:layout_marginBottom="10sp"
+        android:orientation="horizontal"
+        android:id="@+id/frametwo"
+        android:onClick="manual2clicked">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="47dp"
+            android:layout_height="58dp"
+            android:layout_margin="10sp"
+            app:srcCompat="@drawable/ic_articon" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="325dp"
+            android:layout_height="match_parent"
+            android:paddingVertical="25sp"
+            android:text="@string/manual2name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
 </RelativeLayout>

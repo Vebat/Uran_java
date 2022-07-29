@@ -70,5 +70,15 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         }
+    public void manual2clicked(View v) {  //  method for click on second manual
+        switch(v.getId()) {
+            case R.id.frametwo:
+                Intent intent = new Intent(this, Manualtwo.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
+    }
 }
 
