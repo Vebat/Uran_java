@@ -91,5 +91,38 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
     }
+
+    public void manual4clicked(View v) {  //  method for click on second manual
+        switch(v.getId()) {
+            case R.id.framefour:
+                Intent intent = new Intent(this, Manualfour.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
+    }
+
+    public void manual5clicked(View v) {  //  method for click on second manual
+        switch(v.getId()) {
+            case R.id.framefive:
+                Intent intent = new Intent(this, Manualfive.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
+    }
+
+    public void manual6clicked(View v) {  //  method for click on second manual
+        switch(v.getId()) {
+            case R.id.framesix:
+                Intent intent = new Intent(this, Manualsix.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
+    }
 }
 
