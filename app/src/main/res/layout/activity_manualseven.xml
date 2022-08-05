@@ -4,37 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Manualsix">
+    tools:context=".Manualseven">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_margin="10dp">
 
         <TextView
-            android:id="@+id/textView29"
+            android:id="@+id/textView32"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/manualsix_header"
+            android:text="@string/manual7name"
             android:textAlignment="center"
+            android:textAllCaps="false"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="@dimen/textheader"/>
+            android:textSize="@dimen/textheader"
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView30"
+            android:id="@+id/textView33"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/manualsix_text"
+            android:text="@string/manualseven_text"
             android:textColor="@color/black"
-            android:textSize="@dimen/textmain"/>
+            android:textSize="@dimen/textmain" />
 
-        <TextView
-            android:id="@+id/textView31"
+        <ImageView
+            android:id="@+id/imageView11"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/manualsix_text2"
-            android:textColor="@color/black"
-            android:textSize="@dimen/textmain"/>
+            android:layout_height="308dp"
+            app:srcCompat="@drawable/blood" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="match_parent"
+            android:layout_height="308dp"
+            app:srcCompat="@drawable/koma" />
     </LinearLayout>
 </ScrollView>

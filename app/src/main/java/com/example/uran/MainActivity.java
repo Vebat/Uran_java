@@ -1,10 +1,13 @@
 package com.example.uran;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -29,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        setSupportActionBar(binding.appBarMain.toolbar);
+       setSupportActionBar(binding.appBarMain.toolbar);
 
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
@@ -60,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public void manual1clicked(View v) {  //  method for click on first manual
+    public void manual1clicked(View v) {  //  method for opening windows of manuals by the click on layout.
         switch(v.getId()) {
             case R.id.frameone:
                     Intent intent = new Intent(this, Manualone.class);
@@ -70,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         }
-    public void manual2clicked(View v) {  //  method for click on second manual
+    public void manual2clicked(View v) {
         switch(v.getId()) {
             case R.id.frametwo:
                 Intent intent = new Intent(this, Manualtwo.class);
@@ -81,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void manual3clicked(View v) {  //  method for click on second manual
+    public void manual3clicked(View v) {
         switch(v.getId()) {
             case R.id.framethree:
                 Intent intent = new Intent(this, Manualthree.class);
@@ -92,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void manual4clicked(View v) {  //  method for click on second manual
+    public void manual4clicked(View v) {
         switch(v.getId()) {
             case R.id.framefour:
                 Intent intent = new Intent(this, Manualfour.class);
@@ -103,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void manual5clicked(View v) {  //  method for click on second manual
+    public void manual5clicked(View v) {
         switch(v.getId()) {
             case R.id.framefive:
                 Intent intent = new Intent(this, Manualfive.class);
@@ -114,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void manual6clicked(View v) {  //  method for click on second manual
+    public void manual6clicked(View v) {
         switch(v.getId()) {
             case R.id.framesix:
                 Intent intent = new Intent(this, Manualsix.class);
@@ -124,5 +127,46 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
     }
+
+    public void manual7clicked(View v) {
+        switch(v.getId()) {
+            case R.id.frameseven:
+                Intent intent = new Intent(this, Manualseven.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
+    }
+    public void manual8clicked(View v) {
+        switch(v.getId()) {
+            case R.id.frameeight:
+                Intent intent = new Intent(this, Manualeight.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
+    }
+
+
+    public void channelclicked(View view) {
+
+
+    }
+
+    public void cardclicked(View view) {
+       android.content.ClipboardManager clipboardManager = (ClipboardManager)getSystemService(CLIPBOARD_SERVICE);
+
+        String number="5228600586359368";
+        ClipData clipData = ClipData.newPlainText("number",number);
+
+        Toast toast = Toast.makeText(getApplicationContext(),
+                "Номер карты скопирован",
+                Toast.LENGTH_SHORT);
+        toast.show();
+    }
+
+
 }
 

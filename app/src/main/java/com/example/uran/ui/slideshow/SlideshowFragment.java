@@ -10,6 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+
+
 import com.example.uran.databinding.FragmentSlideshowBinding;
 
 public class SlideshowFragment extends Fragment {

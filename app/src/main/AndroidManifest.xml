@@ -14,6 +14,12 @@
         android:theme="@style/Theme.Uran"
         tools:targetApi="31">
         <activity
+            android:name=".Manualeight"
+            android:exported="false" />
+        <activity
+            android:name=".Manualseven"
+            android:exported="false" />
+        <activity
             android:name=".Manualsix"
             android:exported="false" />
         <activity

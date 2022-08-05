@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Manualeight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/manual8name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textheader"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/manualeight_text1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textmain" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/manualeight_text2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textmain"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/manualeight_text3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textmain" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="match_parent"
+            android:layout_height="620dp"
+            app:srcCompat="@drawable/obstrel" />
+    </LinearLayout>
+</ScrollView>
