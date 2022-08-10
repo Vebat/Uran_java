@@ -10,6 +10,7 @@
     <string name="menu_home">Руководства</string>
     <string name="menu_gallery">Тактические знаки</string>
     <string name="menu_slideshow">О программе</string>
+    <string name="menu_coords">Геодезия</string>
     <string name="manual1name">Руководство по экспулатации квадрокоптеров</string>
     <string name="manual2name">Корректировка артиллерии</string>
     <string name="manual3name">Действие в районах минной опасности</string>
@@ -385,4 +386,11 @@ Ecли вo вpeмя apтoбcтpeлa быcтpo залечь, мoжнo нe пocтp
     <string name="aboutpage_text6">Поддержать рублём:</string>
     <string name="aboutpage_text7">5228600586359368 — Сбербанк</string>
     <string name="aboutpage_text8">Попов И.С</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="geodesia_text1">Координаты начальной точки:</string>
+    <string name="geodesia_text2">Координаты конечной точки:</string>
+    <string name="geodesia_textbutton">Рассчитать</string>
+
 </resources>

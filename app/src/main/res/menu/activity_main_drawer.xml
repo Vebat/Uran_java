@@ -9,6 +9,12 @@
             android:icon="@drawable/ic_baseline_text_snippet_24"
             android:title="@string/menu_home" />
         <item
+            android:id="@+id/nav_coords"
+            android:icon="@drawable/ic_earth"
+            android:title="@string/menu_coords"
+            android:onClick="Geodesiaclicked"
+            />
+        <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_signicons"
             android:title="@string/menu_gallery" />

@@ -5,8 +5,8 @@ import android.content.ClipboardManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,7 +18,6 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.example.uran.databinding.ActivityMainBinding;
 import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -59,6 +58,17 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+    public void Geodesiaclicked(MenuItem item) {
+        switch(item.getItemId()) {
+            case R.id.nav_coords:
+                Intent intent = new Intent(this, Geodesia.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
+
     }
 
 
@@ -151,21 +161,32 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void channelclicked(View view) {
+        android.content.ClipboardManager clipboardManager = (ClipboardManager)getSystemService(CLIPBOARD_SERVICE);//Creation a clipboard
 
+        String url="https://t.me/project_uran";
+        ClipData clipData= ClipData.newPlainText("url",url);
+        clipboardManager.setPrimaryClip(clipData);      //Set text in clipboard
+
+        Toast toast = Toast.makeText(getApplicationContext(), //Make a toast with alert
+                "Ссылка на канал скопирована",
+                Toast.LENGTH_SHORT);
+        toast.show();
 
     }
 
     public void cardclicked(View view) {
-       android.content.ClipboardManager clipboardManager = (ClipboardManager)getSystemService(CLIPBOARD_SERVICE);
+        ClipboardManager clipboardManager = (ClipboardManager)getSystemService(CLIPBOARD_SERVICE); //Creation clipboard
 
         String number="5228600586359368";
-        ClipData clipData = ClipData.newPlainText("number",number);
+        ClipData clipData1 = ClipData.newPlainText("number",number);
+        clipboardManager.setPrimaryClip(clipData1);           //Set text in clipboard
 
-        Toast toast = Toast.makeText(getApplicationContext(),
+        Toast toast = Toast.makeText(getApplicationContext(), //Make a toast with alert
                 "Номер карты скопирован",
                 Toast.LENGTH_SHORT);
         toast.show();
     }
+
 
 
 }
