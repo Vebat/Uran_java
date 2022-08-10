@@ -392,5 +392,6 @@ Ecли вo вpeмя apтoбcтpeлa быcтpo залечь, мoжнo нe пocтp
     <string name="geodesia_text1">Координаты начальной точки:</string>
     <string name="geodesia_text2">Координаты конечной точки:</string>
     <string name="geodesia_textbutton">Рассчитать</string>
+    <string name="geodesia_radiotext">Тип задачи:</string>
 
 </resources>

@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Geodesia"
+    tools:context=".Geodesiastraight"
     android:orientation="vertical"
     android:layout_margin="10dp">
-
 
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal">>
 
         <TextView
             android:id="@+id/textView46"
@@ -22,26 +21,27 @@
             android:textColor="@color/black" />
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/radioButton3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:checked="true"
             android:text="Прямая"
-            android:textAlignment="viewStart"
-            android:onClick="radiobuttonclicked"/>
+            android:textAlignment="viewStart" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/radioButton4"
             android:layout_width="3dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:checked="true"
-            android:text="Обратная" />
+            android:checked="false"
+            android:text="Обратная"
+            android:onClick="radiobuttonclicked2"/>
 
     </RadioGroup>
 
     <TextView
-        android:id="@+id/textView47"
+        android:id="@+id/textView50"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/geodesia_text1"
@@ -49,77 +49,72 @@
         android:textSize="@dimen/textmain" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/editTextNumberDecimal"
         android:layout_width="match_parent"
         android:layout_height="60sp"
         android:ems="10"
-        android:inputType="textPersonName"
-        tools:ignore="TouchTargetSizeCheck"
-        android:hint="Долгота"/>
+        android:hint="Долгота"
+        android:inputType="none" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/editTextNumberDecimal2"
         android:layout_width="match_parent"
         android:layout_height="60sp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Широта"/>
+        android:hint="Широта"
+        android:inputType="none" />
 
     <TextView
-        android:id="@+id/textView48"
+        android:id="@+id/textView51"
         android:layout_width="match_parent"
-        android:layout_height="50sp"
-        android:paddingTop="20sp"
-        android:text="@string/geodesia_text2"
+        android:layout_height="wrap_content"
+        android:text="Расстояние:"
         android:textColor="@color/black"
         android:textSize="@dimen/textmain" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/editTextNumberDecimal3"
         android:layout_width="match_parent"
         android:layout_height="60sp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Долгота"/>
+        android:hint="В метрах"
+        android:inputType="none" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Азимут:"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textmain" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/editTextNumberDecimal4"
         android:layout_width="match_parent"
         android:layout_height="60sp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Широта"
-        />
+        android:hint=" В градусах "
+        android:inputType="none" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/geodesia_textbutton"
-        android:onClick="geodataclicked"/>
+        android:onClick="buttonstraighttask"/>
 
     <TextView
-        android:id="@+id/textresult"
+        android:id="@+id/londot"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="@dimen/textmain"
-        android:textStyle="bold" />
+        android:textSize="@dimen/textmain" />
 
     <TextView
-        android:id="@+id/az1"
+        android:id="@+id/latdot"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="textStart"
-        android:textColor="@color/black" />
-
-    <TextView
-        android:id="@+id/az2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="textStart"
         android:textColor="@color/black"
-        android:visibility="invisible" />
+        android:textSize="@dimen/textmain" />
 
 </LinearLayout>

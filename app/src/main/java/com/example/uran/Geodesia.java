@@ -1,5 +1,6 @@
 package com.example.uran;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -22,6 +23,8 @@ public class Geodesia extends AppCompatActivity {
     public void geodataclicked(View view) {
 
         TextView textresult=(TextView)findViewById(R.id.textresult);
+        TextView az1=(TextView)findViewById(R.id.az1);
+        TextView az2=(TextView)findViewById(R.id.az2);
 
         EditText edt = (EditText)findViewById(R.id.editTextTextPersonName2);
         String edtext = edt.getText().toString();      //get a text from EditText
@@ -41,6 +44,9 @@ public class Geodesia extends AppCompatActivity {
             GeodesicData task=Geodesic.WGS84.Inverse(lat1,lon1,lat2,lon2);
 
             textresult.setText(String.valueOf( task.s12+ "\t(метров)"));
+            az1.setText(String.valueOf("Азимут 1: " +task.azi1+ "\tградусов"));
+            az2.setText(String.valueOf("Азимут 2: " +task.azi2+ "\tградусов"));
+
         } else {
             textresult.setText("Ошибка при вводе данных");
             edt.getText().clear();
@@ -57,5 +63,18 @@ public class Geodesia extends AppCompatActivity {
         } catch(NumberFormatException e){
             return false;
         }
+    }
+
+    public void radiobuttonclicked(View view) {
+
+        switch(view.getId()) {
+            case R.id.radioButton:
+                Intent intent = new Intent(this, Geodesiastraight.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
+
     }
 }
