@@ -394,4 +394,32 @@ Ecли вo вpeмя apтoбcтpeлa быcтpo залечь, мoжнo нe пocтp
     <string name="geodesia_textbutton">Рассчитать</string>
     <string name="geodesia_radiotext">Тип задачи:</string>
 
+
+    <string name="signru1">Танк</string>
+    <string name="signru2">БМП</string>
+    <string name="signru3">Бронетранспортер</string>
+    <string name="signru4">Автомобиль</string>
+    <string name="signru5">Зенитная самоходная установка (с РЛС)</string>
+    <string name="signru6">Боевая машина зенитного комплекса ближнего действия</string>
+    <string name="signru7">Зенитная пушка</string>
+    <string name="signru8">Пушка</string>
+    <string name="signru9">Противотанковая пушка</string>
+    <string name="signru10">Миномет</string>
+    <string name="signru11">Стаковый противотанковый гранатомет</string>
+    <string name="signru12">Автоматический гранатомет</string>
+    <string name="signru13">Ручной противотанковый гранатомет</string>
+    <string name="signru14">Станковый пулемет</string>
+    <string name="signru15">Ручной пулемет</string>
+    <string name="signru16">Радиостанция подвижная</string>
+    <string name="signru17">Радиостанция переносная</string>
+    <string name="signru18">Радиостанция в танке</string>
+    <string name="signru19">Командно-наблюдательный пункт командира роты в пешем порядке</string>
+    <string name="signru20">Командно-наблюдательный пункт командира роты на БМП</string>
+    <string name="signru21">Командно-наблюдательный пункт (штаб) батальона</string>
+    <string name="signru22">Командно-наблюдательный пункт (штаб) батальона в движении</string>
+    <string name="signru23">Командный пункт (штаб) полка</string>
+    <string name="signru24">Ближайшая задача батальона (танкового)</string>
+    <string name="signru25">Рубеж развертывания в батальонные колонна</string>
+    <string name="signru26">Рубеж перехода в атаку подразделения</string>
+
 </resources>

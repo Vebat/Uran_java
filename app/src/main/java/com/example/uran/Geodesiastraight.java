@@ -32,6 +32,7 @@ public class Geodesiastraight extends AppCompatActivity {
 
     public void buttonstraighttask(View view) {
 
+
         TextView londot = (TextView) findViewById(R.id.londot); //initialize textviews in code to assign a result data
         TextView latdot = (TextView) findViewById(R.id.latdot);
 
@@ -48,12 +49,12 @@ public class Geodesiastraight extends AppCompatActivity {
         if (isNumeric(lon) & isNumeric(lat) & isNumeric(dist) & isNumeric(az)) {
             double  lont=Double.parseDouble(lon);
             double  latt=Double.parseDouble(lat);
-            double  azi12=Double.parseDouble(dist);
-            double  s12=Double.parseDouble(az);
+            double  azi12=Double.parseDouble(az);
+            double  s12=Double.parseDouble(dist);
 
-            GeodesicData task= Geodesic.WGS84.Direct(lont,latt,azi12,s12);
-            londot.setText(String.valueOf("Долгота:\t"+task.lon2));
-            latdot.setText(String.valueOf("Широта:\t"+task.lat2));
+            GeodesicData taskdirect= Geodesic.WGS84.Direct(latt, lont, azi12, false,s12,32671);
+            londot.setText("Долгота:\t"+taskdirect.lon2);
+            latdot.setText("Широта:\t"+taskdirect.lat2);
 
         } else {
             londot.setText("Ошибка при вводе данных");

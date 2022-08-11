@@ -43,9 +43,9 @@ public class Geodesia extends AppCompatActivity {
 
             GeodesicData task=Geodesic.WGS84.Inverse(lat1,lon1,lat2,lon2);
 
-            textresult.setText(String.valueOf( task.s12+ "\t(метров)"));
-            az1.setText(String.valueOf("Азимут 1: " +task.azi1+ "\tградусов"));
-            az2.setText(String.valueOf("Азимут 2: " +task.azi2+ "\tградусов"));
+            textresult.setText( task.s12+ "\t(метров)");
+            az1.setText("Азимут 1: " +task.azi1+ "\t(градусов)");
+            az2.setText("Азимут 2: " +task.azi2+ "\t(градусов)");
 
         } else {
             textresult.setText("Ошибка при вводе данных");
