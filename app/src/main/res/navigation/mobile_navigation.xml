@@ -22,4 +22,10 @@
         android:name="com.example.uran.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <activity
+        android:id="@+id/geodesia"
+        android:name="com.example.uran.Geodesia"
+        android:label="activity_geodesia"
+        tools:layout="@layout/activity_geodesia" />
+
 </navigation>

@@ -2,6 +2,7 @@ package com.example.uran;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -17,6 +18,8 @@ public class Geodesiastraight extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_geodesiastraight);
+        getSupportActionBar().setTitle("Геодезия"); // for set actionbar title
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // for add back arrow in action bar
     }
 
     public void radiobuttonclicked2(View view) {
@@ -74,4 +77,14 @@ public class Geodesiastraight extends AppCompatActivity {
             return false;
         }
     }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // TODO Auto-generated method stub
+        int id = item.getItemId();
+        if (id == android.R.id.home) {
+            finish();
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item); }
 }

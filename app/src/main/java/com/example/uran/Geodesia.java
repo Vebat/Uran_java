@@ -2,6 +2,7 @@ package com.example.uran;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -18,7 +19,11 @@ public class Geodesia extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_geodesia);
+        getSupportActionBar().setTitle("Геодезия"); // for set actionbar title
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // for add back arrow in action bar
     }
+
+
 
     public void geodataclicked(View view) {
 
@@ -77,4 +82,14 @@ public class Geodesia extends AppCompatActivity {
         }
 
     }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // TODO Auto-generated method stub
+        int id = item.getItemId();
+        if (id == android.R.id.home) {
+            finish();
+        }
+        return super.onOptionsItemSelected(item); }
 }

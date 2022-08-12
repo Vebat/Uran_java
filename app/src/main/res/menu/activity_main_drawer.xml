@@ -12,7 +12,7 @@
             android:id="@+id/nav_coords"
             android:icon="@drawable/ic_earth"
             android:title="@string/menu_coords"
-            android:onClick="Geodesiaclicked"
+           android:onClick="Geodesiaclicked"
             />
         <item
             android:id="@+id/nav_gallery"
